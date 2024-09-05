@@ -1,0 +1,19 @@
+name: Auto-run Every Minute
+
+# Trigger the workflow every minute using a cron schedule
+on:
+  schedule:
+    - cron: '* * * * *'  # Every minute
+
+# Define the job that runs when the workflow is triggered
+jobs:
+  auto_run_job:
+    runs-on: ubuntu-latest  # Use the latest Ubuntu environment for the job
+
+    steps:
+      # Step 1: Print a message and exit
+      - name: Log and Exit
+        run: |
+          echo "👋 Hello! Nothing to do here, but feel free to join our community."
+          echo "🔗 Visit our Telegram: https://t.me/likhondotxyz"
+          echo "This workflow is scheduled to run every minute for testing!"
