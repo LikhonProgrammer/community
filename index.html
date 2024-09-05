@@ -1,233 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Earn monthly by completing tasks. Join the largest community in Bangladesh for growth, learning, and rewarding opportunities.">
-    <title>Likhon Sheikh's Community - Earn Monthly by Completing Tasks</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://img.icons8.com/color/48/000000/crypto-wallet.png">
+    <meta name="description" content="Likhon Sheikh's Community - A platform for earning by completing tasks, with a focus on cybersecurity, blockchain, and development.">
+    <title>Likhon Sheikh's Community | Earn by Completing Tasks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #1f1f1f;
-            color: #e0e0e0;
-            line-height: 1.6;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            overflow-x: hidden;
+            background-color: #f4f4f4;
+            color: #333;
         }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
         header {
-            background: #111;
+            background: #222;
+            color: #fff;
             padding: 20px;
             text-align: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
         }
-
-        header h1 {
-            font-size: 2.5rem;
-            color: #00f260;
+        .container {
+            width: 80%;
+            margin: 0 auto;
         }
-
-        .loading-screen {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #111;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
+        h1, h2 {
+            color: #444;
         }
-
-        .loading-screen h1 {
-            color: #00f260;
-            font-size: 2rem;
+        .section {
+            padding: 20px 0;
         }
-
-        .fade-out {
-            animation: fadeOut 1s forwards;
+        .section:nth-child(even) {
+            background: #e2e2e2;
         }
-
-        @keyframes fadeOut {
-            to {
-                opacity: 0;
-                visibility: hidden;
-            }
-        }
-
-        section {
-            margin: 40px 0;
-        }
-
-        section h2 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-            color: #00f260;
-        }
-
-        section ul {
-            list-style-type: none;
-        }
-
-        section ul li {
-            margin: 10px 0;
-            font-size: 1.2rem;
-        }
-
-        section ul li a {
-            color: #e0e0e0;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        section ul li a:hover {
-            color: #00f260;
-        }
-
-        .badges {
-            display: flex;
-            gap: 10px;
-            margin-top: 10px;
-        }
-
-        footer {
-            background: #111;
-            padding: 20px;
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        footer p {
-            color: #00f260;
-            font-size: 1rem;
-        }
-
-        .community-stats {
-            display: flex;
-            justify-content: space-around;
-            margin: 20px 0;
-            text-align: center;
-        }
-
-        .community-stats div {
-            font-size: 1.5rem;
-            color: #00f260;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #00f260;
-            color: #111;
-            border-radius: 5px;
-            text-decoration: none;
-            margin: 20px 0;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: #00c853;
-        }
-
-        .crypto-theme {
-            background-color: #00f260;
-            color: #111;
-            padding: 15px;
+        .card {
+            background: #fff;
             border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
             margin: 10px 0;
+            text-align: center;
         }
-
-        .crypto-theme:hover {
-            background-color: #00c853;
+        .card img {
+            max-width: 100px;
+            margin-bottom: 10px;
         }
-
-        @media (max-width: 768px) {
-            .community-stats {
-                flex-direction: column;
-            }
+        .card a {
+            color: #1e90ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .card a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background: #222;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
         }
     </style>
 </head>
-
 <body>
-
-    <!-- Loading Screen -->
-    <div class="loading-screen" id="loading-screen">
-        <h1>Loading...</h1>
-    </div>
-
     <header>
         <h1>💡 Earn Monthly by Completing Tasks</h1>
+        <p>Welcome to <strong>Likhon Sheikh's Community</strong>, the largest community dedicated to helping members earn by completing tasks. Join us in enhancing digital security, diving into blockchain, or engaging in development projects!</p>
     </header>
 
     <div class="container">
-        <section>
-            <p>Welcome to <strong>Likhon Sheikh's Community</strong>, the largest community dedicated to helping members earn by completing tasks. We are composed of genuine members committed to growth, learning, and collaboration. Join us in enhancing the digital security landscape, diving into blockchain, or engaging in development projects!</p>
-        </section>
-
-        <section>
+        <div class="section">
             <h2>🌐 Join Our Network</h2>
-            <ul>
-                <li><a href="https://t.me/+K9Hqif37Fqg4ZTZl">VorTex Cybersecurity</a> - Dedicated to securing Bangladesh's digital landscape.</li>
-                <li><a href="https://t.me/VorTexNetworkTeam">VorTex Network Team</a> - Connect with the core team and contribute to key projects.</li>
-                <li><a href="https://t.me/likhonverse">Likhon Verse</a> - Explore a wide range of educational content and resources.</li>
-                <li><a href="https://t.me/likhonversebot/panel">Likhon Verse Web Bot</a> - Access our CC Checker panel via Telegram.</li>
-                <li><a href="https://t.me/ProfitableRewardsBD">Profitable Rewards BD</a> - Earn by completing simple tasks and receive rewards.</li>
-                <li><a href="https://t.me/RexxLounge">Rexx Lounge</a> - Dive into the riskiest and most strategic blockchain plays.</li>
-            </ul>
-        </section>
+            <div class="card">
+                <img src="https://img.shields.io/badge/Focus-Cybersecurity-blue?style=flat-square" alt="Cybersecurity">
+                <h3><a href="https://t.me/+K9Hqif37Fqg4ZTZl">VorTex Cybersecurity</a></h3>
+                <p>Dedicated to securing Bangladesh's digital landscape.</p>
+            </div>
+            <div class="card">
+                <img src="https://img.shields.io/badge/Team-VorTex_Network-orange?style=flat-square" alt="Team">
+                <h3><a href="https://t.me/VorTexNetworkTeam">VorTex Network Team</a></h3>
+                <p>Connect with the core team and contribute to key projects.</p>
+            </div>
+            <div class="card">
+                <img src="https://img.shields.io/badge/Focus-Education-green?style=flat-square" alt="Education">
+                <h3><a href="https://t.me/likhonverse">Likhon Verse</a></h3>
+                <p>Explore a wide range of educational content and resources.</p>
+            </div>
+            <div class="card">
+                <img src="https://img.shields.io/badge/Tool-CC_Checker-ff69b4?style=flat-square" alt="Bot">
+                <h3><a href="https://t.me/likhonversebot/panel">Likhon Verse Web Bot</a></h3>
+                <p>Access our CC Checker panel via Telegram.</p>
+            </div>
+            <div class="card">
+                <img src="https://img.shields.io/badge/Rewards-Profitable_BD-red?style=flat-square" alt="Rewards">
+                <h3><a href="https://t.me/ProfitableRewardsBD">Profitable Rewards BD</a></h3>
+                <p>Earn by completing simple tasks and receive rewards.</p>
+            </div>
+            <div class="card">
+                <img src="https://img.shields.io/badge/Blockchain-Rexx_Lounge-purple?style=flat-square" alt="Blockchain">
+                <h3><a href="https://t.me/RexxLounge">Rexx Lounge</a></h3>
+                <p>Dive into the riskiest and most strategic blockchain plays.</p>
+            </div>
+        </div>
 
-        <section class="community-stats">
-            <div>👥 10K+ Community Members</div>
-            <div>📈 150+ Projects Completed</div>
-            <div>⭐ 1K+ Supporters</div>
-        </section>
+        <div class="section">
+            <h2>🎉 Community Stats</h2>
+            <div class="card">
+                <img src="https://img.shields.io/badge/Community_Members-10K+-blue?style=for-the-badge" alt="Community Members">
+                <img src="https://img.shields.io/badge/Projects_Completed-150+-green?style=for-the-badge" alt="Projects Completed">
+                <img src="https://img.shields.io/badge/Supporters-1K-orange?style=for-the-badge" alt="Supporters">
+            </div>
+        </div>
 
-        <section>
+        <div class="section">
             <h2>🎥 Check Us Out on YouTube and Telegram</h2>
-            <p>We create content to help you learn and grow. Don't forget to subscribe, like, and leave a comment on our platforms. We're aiming for <strong>1,000 genuine supporters</strong>!</p>
-            <a href="https://youtube.com/channel/UC-YOUR-CHANNEL-ID" class="btn">Subscribe to Likhon Tech Solutions</a>
-        </section>
+            <div class="card">
+                <img src="https://img.shields.io/badge/Subscribe-LikhonTechSolutions-red?style=flat-square" alt="YouTube">
+                <h3><a href="https://youtube.com/channel/UC-YOUR-CHANNEL-ID">YouTube Channel: Likhon Tech Solutions</a></h3>
+                <p>Don't forget to subscribe, like, and leave a comment. We're aiming for <strong>1,000 genuine supporters</strong>!</p>
+            </div>
+        </div>
 
-        <section>
+        <div class="section">
             <h2>🚀 About Likhon Sheikh</h2>
-            <p>Likhon Sheikh is a <strong>TypeScript</strong> & <strong>Python Developer</strong> with a strong focus on cybersecurity and blockchain technology. He created this community to empower individuals through education and rewarding opportunities.</p>
-            <a href="https://t.me/+jtDtBtT18wg1M2U9" class="crypto-theme">View Likhon Sheikh's Portfolio</a>
-        </section>
+            <div class="card">
+                <img src="https://img.shields.io/badge/Portfolio-Likhon_Sheikh-brightgreen?style=flat-square" alt="Developer">
+                <h3><a href="https://t.me/+jtDtBtT18wg1M2U9">Likhon Sheikh's Portfolio</a></h3>
+                <p>TypeScript & Python Developer with a focus on cybersecurity and blockchain technology.</p>
+            </div>
+        </div>
 
-        <section>
+        <div class="section">
             <h2>✅ Completed a Task?</h2>
-            <p>Once you’ve completed your task, send your wallet address to <a href="https://t.me/LikhonProgrammer">@LikhonProgrammer</a> to receive a tip as a thank you!</p>
-        </section>
+            <p>Once you’ve completed your task, send your wallet address to <a href="https://t.me/LikhonProgrammer">[@LikhonProgrammer](https://t.me/LikhonProgrammer)</a> to receive a tip as a thank you!</p>
+        </div>
     </div>
 
     <footer>
         <p>© 2024 VorTex Cybersecurity - Empowering Bangladesh through digital security and education.</p>
     </footer>
-
-    <script>
-        window.addEventListener("load", function() {
-            const loadingScreen = document.getElementById('loading-screen');
-            loadingScreen.classList.add('fade-out');
-        });
-    </script>
 </body>
-
 </html>
