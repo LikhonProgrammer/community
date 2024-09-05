@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Likhon Sheikh's Community - A platform for earning by completing tasks, with a focus on cybersecurity, blockchain, and development.">
+    <meta name="description" content="Likhon Sheikh's Community - A platform for earning by completing tasks, focusing on cybersecurity, blockchain, and development.">
+    <meta property="og:title" content="Likhon Sheikh's Community">
+    <meta property="og:description" content="Join Likhon Sheikh's Community to earn by completing tasks, enhance digital security, dive into blockchain, and engage in development projects.">
+    <meta property="og:image" content="https://example.com/og-image.jpg">
+    <meta property="og:url" content="https://your-github-pages-url.com">
+    <meta property="og:type" content="website">
     <title>Likhon Sheikh's Community | Earn by Completing Tasks</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -21,7 +26,8 @@
             text-align: center;
         }
         .container {
-            width: 80%;
+            width: 90%;
+            max-width: 1200px;
             margin: 0 auto;
         }
         h1, h2 {
@@ -59,6 +65,20 @@
             padding: 10px;
             text-align: center;
         }
+        .dynamic-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .dynamic-content div {
+            flex: 1 1 300px;
+            margin: 10px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -70,35 +90,8 @@
     <div class="container">
         <div class="section">
             <h2>🌐 Join Our Network</h2>
-            <div class="card">
-                <img src="https://img.shields.io/badge/Focus-Cybersecurity-blue?style=flat-square" alt="Cybersecurity">
-                <h3><a href="https://t.me/+K9Hqif37Fqg4ZTZl">VorTex Cybersecurity</a></h3>
-                <p>Dedicated to securing Bangladesh's digital landscape.</p>
-            </div>
-            <div class="card">
-                <img src="https://img.shields.io/badge/Team-VorTex_Network-orange?style=flat-square" alt="Team">
-                <h3><a href="https://t.me/VorTexNetworkTeam">VorTex Network Team</a></h3>
-                <p>Connect with the core team and contribute to key projects.</p>
-            </div>
-            <div class="card">
-                <img src="https://img.shields.io/badge/Focus-Education-green?style=flat-square" alt="Education">
-                <h3><a href="https://t.me/likhonverse">Likhon Verse</a></h3>
-                <p>Explore a wide range of educational content and resources.</p>
-            </div>
-            <div class="card">
-                <img src="https://img.shields.io/badge/Tool-CC_Checker-ff69b4?style=flat-square" alt="Bot">
-                <h3><a href="https://t.me/likhonversebot/panel">Likhon Verse Web Bot</a></h3>
-                <p>Access our CC Checker panel via Telegram.</p>
-            </div>
-            <div class="card">
-                <img src="https://img.shields.io/badge/Rewards-Profitable_BD-red?style=flat-square" alt="Rewards">
-                <h3><a href="https://t.me/ProfitableRewardsBD">Profitable Rewards BD</a></h3>
-                <p>Earn by completing simple tasks and receive rewards.</p>
-            </div>
-            <div class="card">
-                <img src="https://img.shields.io/badge/Blockchain-Rexx_Lounge-purple?style=flat-square" alt="Blockchain">
-                <h3><a href="https://t.me/RexxLounge">Rexx Lounge</a></h3>
-                <p>Dive into the riskiest and most strategic blockchain plays.</p>
+            <div class="dynamic-content" id="network-links">
+                <!-- JavaScript will dynamically populate this section -->
             </div>
         </div>
 
@@ -138,5 +131,60 @@
     <footer>
         <p>© 2024 VorTex Cybersecurity - Empowering Bangladesh through digital security and education.</p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const networkLinks = [
+                {
+                    name: "VorTex Cybersecurity",
+                    url: "https://t.me/+K9Hqif37Fqg4ZTZl",
+                    img: "https://img.shields.io/badge/Focus-Cybersecurity-blue?style=flat-square",
+                    description: "Dedicated to securing Bangladesh's digital landscape."
+                },
+                {
+                    name: "VorTex Network Team",
+                    url: "https://t.me/VorTexNetworkTeam",
+                    img: "https://img.shields.io/badge/Team-VorTex_Network-orange?style=flat-square",
+                    description: "Connect with the core team and contribute to key projects."
+                },
+                {
+                    name: "Likhon Verse",
+                    url: "https://t.me/likhonverse",
+                    img: "https://img.shields.io/badge/Focus-Education-green?style=flat-square",
+                    description: "Explore a wide range of educational content and resources."
+                },
+                {
+                    name: "Likhon Verse Web Bot",
+                    url: "https://t.me/likhonversebot/panel",
+                    img: "https://img.shields.io/badge/Tool-CC_Checker-ff69b4?style=flat-square",
+                    description: "Access our CC Checker panel via Telegram."
+                },
+                {
+                    name: "Profitable Rewards BD",
+                    url: "https://t.me/ProfitableRewardsBD",
+                    img: "https://img.shields.io/badge/Rewards-Profitable_BD-red?style=flat-square",
+                    description: "Earn by completing simple tasks and receive rewards."
+                },
+                {
+                    name: "Rexx Lounge",
+                    url: "https://t.me/RexxLounge",
+                    img: "https://img.shields.io/badge/Blockchain-Rexx_Lounge-purple?style=flat-square",
+                    description: "Dive into the riskiest and most strategic blockchain plays."
+                }
+            ];
+
+            const container = document.getElementById('network-links');
+            networkLinks.forEach(link => {
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.innerHTML = `
+                    <img src="${link.img}" alt="${link.name}">
+                    <h3><a href="${link.url}">${link.name}</a></h3>
+                    <p>${link.description}</p>
+                `;
+                container.appendChild(card);
+            });
+        });
+    </script>
 </body>
 </html>
