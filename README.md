@@ -1,5 +1,7 @@
 # 💡 Earn Monthly by Completing Tasks
 
+[![Auto-run Every 15 Minutes](https://github.com/LikhonProgrammer/community/actions/workflows/nothing.yml/badge.svg?event=status)](https://github.com/LikhonProgrammer/community/actions/workflows/nothing.yml)
+
 Welcome to **Likhon Sheikh's Community**, the largest community dedicated to helping members earn by completing tasks. We are composed of genuine members committed to growth, learning, and collaboration. Join us in enhancing the digital security landscape, diving into blockchain, or engaging in development projects!
 
 ## 🌐 Join Our Network
