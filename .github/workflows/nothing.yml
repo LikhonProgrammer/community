@@ -1,9 +1,9 @@
-name: Auto-run Every 15 Minutes
+name: Auto-run Every Minute
 
-# Trigger the workflow every 15 minutes using a cron schedule
+# Trigger the workflow every minute using a cron schedule
 on:
   schedule:
-    - cron: '*/15 * * * *'  # Every 15 minutes
+    - cron: '* * * * *'  # Every minute
 
 # Define the job that runs when the workflow is triggered
 jobs:
@@ -16,4 +16,4 @@ jobs:
         run: |
           echo "👋 Hello! Nothing to do here, but feel free to join our community."
           echo "🔗 Visit our Telegram: https://t.me/likhondotxyz"
-          echo "This workflow is scheduled to run every 15 minutes to keep the repo active!"
+          echo "This workflow is scheduled to run every minute for testing!"
